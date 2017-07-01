@@ -45,6 +45,14 @@ declare namespace Transfer {
         rankings: Array<Ranking>
         points: Array<Point>
     }
+
+    interface NetworkStep {
+        date: string
+    }
+
+    interface Step {
+        date: Date
+    }
 }
 
 export = Transfer;
