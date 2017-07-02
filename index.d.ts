@@ -1,22 +1,21 @@
 declare namespace Transfer {
-
     /**
-     * CYCLIST
-     */
+    * CYCLIST
+    */
     interface RawCyclist {
-        country: Array<string>
-        name: string
-        id: string
-        height: number
-        weight: number
+        country: Array<string>;
+        name: string;
+        height: number;
+        weight: number;
+        team: string;
     }
 
     interface Cyclist extends RawCyclist {
-        birthday: Date
+        birthday: Date;
     }
 
     interface NetworkCyclist extends RawCyclist {
-        birthday: string
+        birthday: string;
     }
 
     /**
@@ -25,33 +24,32 @@ declare namespace Transfer {
     interface Ranking {
         rank: number;
         cyclistId: string;
-        team: string;
         time: number;
         difference: number;
     }
 
     interface Point {
-        label: string
-        latitude: number
-        longitude: number
-        altitude: number
-        type: string
+        label: string;
+        latitude: number;
+        longitude: number;
+        altitude: number;
+        type: string;
     }
 
     interface RawStep {
-        distance: number
-        edition: number
-        id: number
-        rankings: Array<Ranking>
-        points: Array<Point>
+        distance: number;
+        edition: number;
+        id: number;
+        rankings: Array<Ranking>;
+        points: Array<Point>;
     }
 
     interface NetworkStep {
-        date: string
+        date: string;
     }
 
     interface Step {
-        date: Date
+        date: Date;
     }
 }
 
