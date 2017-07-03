@@ -33,7 +33,6 @@ declare namespace Transfer {
         latitude: number;
         longitude: number;
         altitude: number;
-        type: string;
     }
 
     interface RawStep {
@@ -43,6 +42,7 @@ declare namespace Transfer {
         rankings: Array<Ranking>;
         points: Array<Point>;
         uri: string;
+        type: string;
     }
 
     interface NetworkStep extends RawStep {
