@@ -5,8 +5,6 @@ declare namespace Transfer {
     interface RawCyclist {
         country: string;
         name: string;
-        height: number;
-        weight: number;
         team: string;
         id: string;
         edition: number;
