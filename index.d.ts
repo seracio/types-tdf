@@ -39,7 +39,8 @@ declare namespace Transfer {
     interface RawStep {
         distance: number;
         edition: number;
-        id: number;
+        num: number;
+        id: string;
         rankings: Array<Ranking>;
         points: Array<Point>;
         uri: string;
