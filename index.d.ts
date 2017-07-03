@@ -36,7 +36,7 @@ declare namespace Transfer {
         altitude: number;
     }
 
-    interface RawStep {
+    interface Step {
         distance: number;
         edition: number;
         num: number;
@@ -47,13 +47,6 @@ declare namespace Transfer {
         type: string;
     }
 
-    interface NetworkStep extends RawStep {
-        date: string;
-    }
-
-    interface Step extends RawStep {
-        date: Date;
-    }
 }
 
 export = Transfer;
