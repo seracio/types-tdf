@@ -3,11 +3,13 @@ declare namespace Transfer {
     * CYCLIST
     */
     interface RawCyclist {
-        country: Array<string>;
+        country: string;
         name: string;
         height: number;
         weight: number;
         team: string;
+        id: string;
+        edition: number;
     }
 
     interface Cyclist extends RawCyclist {
