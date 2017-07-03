@@ -45,11 +45,11 @@ declare namespace Transfer {
         uri: string;
     }
 
-    interface NetworkStep {
+    interface NetworkStep extends RawStep {
         date: string;
     }
 
-    interface Step {
+    interface Step extends RawStep {
         date: Date;
     }
 }
