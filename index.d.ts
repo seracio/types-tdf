@@ -7,6 +7,7 @@ declare namespace Transfer {
         name: string;
         team: string;
         id: string;
+        dossard: string;
         edition: number;
     }
 
