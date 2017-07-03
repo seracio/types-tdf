@@ -42,6 +42,7 @@ declare namespace Transfer {
         id: number;
         rankings: Array<Ranking>;
         points: Array<Point>;
+        uri: string;
     }
 
     interface NetworkStep {
